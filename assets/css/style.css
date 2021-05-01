@@ -1,0 +1,120 @@
+/* ============ GOOGLE FONTS =========== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* ======== VARIABLES CSS =========== */
+:root{
+    --header-height: 3rem;
+    /* ==== COLORS ==== */
+    --firts-color:#0e131b;
+    --firts-color-alt:#0f172e;
+    /*--title-color:#a3c099;
+    --text-color:#0e131b;
+    --text-color:#e8e6b1;*/
+
+    --title-color:#3d3e3c;
+    --text-color:#646661;
+    --text-color-light:#d4cfc9;
+    --body-color:#a3c099;
+    --container-color:#e8e6b1;
+
+    /* ==== FONTS AND TYPOGRAPHY ==== */
+    --body-font-family: 'Source Serif Pro', serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size:.75rem;
+
+    /* ==== FONTS Weight ==== */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ==== MRGENES ==== */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* ==== Z INDEX's ==== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* ========================= Media Querys - Responsive Desing ========================= */
+@media screen and (min-width: 768px){
+    :root{
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* =========== BASE =========== */
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font-family);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========== Variables Dark Theme =========== */
+
+/* =========== Button Dark Light =========== */
+
+/* ================== CLASS CSS ================== */
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+    text-align: center;
+}
+
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+    display: block;
+    color: var(--firts-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
