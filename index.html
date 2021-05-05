@@ -15,6 +15,9 @@
 <body>
     
     <!--  ===================== SCROLL TOP ======================= -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevron-up scrolltop__icon'></i> 
+    </a>
 
     <!--  ===================== HEADER ======================= -->
     <header class="l-header" id="header">
@@ -26,10 +29,10 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <!-- ========== SECCIONES MENU ========== -->
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact as</a></li>
                 </ul>
             </div>
@@ -41,7 +44,123 @@
         </nav>
     </header>
 
-    <main class="l-main"></main>
+    <main class="l-main">
+        <!-- ================ HOME ================ -->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">NetzWit</h1>
+                    <h2 class="home__subtitle">try the best webgl <br> the week.</h2>
+                    <a href="#" class="button-nw">view proyects</a>
+                </div>
+
+                <!--logo-->
+                <img src="assets/img/triangulo.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!-- ================ ABOUT ================ -->
+        <section class="about section bd-container" id="about">
+            <div class="about_-container bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle">About As</span>
+                    <h2 class="section-title">Mejorames la experiencia en la Web para tu negocio con experiencias de <br> Realiad virtual</h2>
+                    <p class="about__description">descripcion acerca de nosotros </p>
+                    <a href="#" class="button-nw">explorar la historia</a>
+                </div>
+
+                <img src="assets/img/slide.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!-- ================ SERVICES ================ -->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Offering</span>
+            <h2 class="section-title">our amazing services </h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <!--<sgv></sgv>-->
+                    <img class="services__img" src="assets/img/SVG/UI-UX2.svg" alt="">
+                    <h3 class="services__title">UI/UX Web Movil</h3>
+                    <p class="services__description">
+                        Ofercemos un buen diseño de user interface y user experience para el sitio o app de tu empresa
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <!--<sgv></sgv>-->
+                    <img class="services__img" src="assets/img/SVG/building-websites.svg" alt="">
+                    <h3 class="services__title">Construccion de sitios Web</h3>
+                    <p class="services__description">
+                        Construimos tu sitio Web con las ultimas tendencias y con las mejores herramientas
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <!--<sgv></sgv>-->
+                    <img class="services__img" src="assets/img/SVG/web-app-responsive.svg" alt="">
+                    <h3 class="services__title">Desarrollo de Aplicaciones Web-Mobiles</h3>
+                    <p class="services__description">
+                        Analisis Diseño y desarrollo de tu Aplicacion web
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ MENU - PROJECTS ================ -->
+        <section class="projects section bd-container" id="menu">
+            <span class="section-subtitle">Projects</span>
+            <h2 class="section-title">Nuestra especialidad</h2>
+
+            <div class="poject__container bd-grid">
+                <!--tarjetas de servicios o presentacion de servicios-->
+                <div class="project__content">
+                    <img src="assets/img/bird-2.png" alt="" class="project__img">
+                    <h3 class="project__name">WebGl In Your Site</h3>
+                    <span class="project__detail">objet 3D in Your Site</span>
+                    <!--<span class="project__precio"></span>-->
+                    <a href="" class="button menu__button">view more<i></i></a> 
+                </div>
+    
+                <div class="project__content">
+                    <img src="assets/img/owl.png" alt="" class="project__img">
+                    <h3 class="project__name">Feria Virtual 3D</h3>
+                    <span class="prect__detail">objet 3D in Your Site</span>
+                    <!--<span class="project__precio"></span>-->
+                    <a href="" class="button menu__button">view more<i></i></a>
+                </div>
+    
+                <div class="project__content">
+                    <img src="assets/img/2870df64bed387f4473d76202b64228f.jpg" alt="" class="project__img">
+                    <h3 class="project__name">E-Comerce</h3>
+                    <span class="prect__detail">objet 3D in Your Site</span>
+                    <!--<span class="project__precio"></span>-->
+                    <a href="" class="button menu__button">view more<i></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ App ================ -->
+        <!--
+        <section class="app section bd-container">
+            <div class="app__container bd-grid">
+                <div class="app__data">
+                    <span class="section-subtitle">App</span>
+                    <h2 class="section-title">App is aviable</h2>
+                    <p class="app__description">find app store</p>
+
+                    <div class="app__stores">
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+
+                    <img src="" alt="" class="app__img">
+                </div>
+            </div>
+        </section>-->
+
+    </main>
     
     <!--  ===================== FOOTER ======================= -->
     <footer class="footer section bd-container"></footer>
